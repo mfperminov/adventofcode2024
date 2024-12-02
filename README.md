@@ -27,20 +27,8 @@ skills, explore new algorithms, and get into the holiday spirit! 🎁
 
 ## Project Structure
 
-├── src
-│ ├── Day01
-│ │ ├── Day01.java
-│ ├── Day2
-│ │ ├── Day02.java
-│ └── ...
-├── resources
-│ ├── Day01
-│ └── ...
-├── README.md
-└── LICENSE
-
-- src: Contains Java source files for each day's challenge.
-- input: Input files for each day's challenge.
+- src/main/java: Contains Java source files for each day's challenge.
+- src/main/resources: Input files for each day's challenge.
 
 ## License
 
