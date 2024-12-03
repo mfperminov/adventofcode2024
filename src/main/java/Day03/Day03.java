@@ -5,6 +5,7 @@ import utils.Input;
 public class Day03 {
     public static void main(String[] args) {
         partOne();
+        partTwo();
     }
 
     private static void partOne() {
@@ -18,18 +19,54 @@ public class Day03 {
             }
             i = nextMulIndex + 4;
             var firstNumber = checkForNumber(line, i, ',');
-            if (firstNumber.number() == -1) {
+            if (firstNumber.number == -1) {
                 continue;
             }
-            i = firstNumber.index();
+            i = firstNumber.index;
             var secondNumber = checkForNumber(line, i, ')');
-            if (secondNumber.number() == -1) {
+            if (secondNumber.number == -1) {
                 continue;
             }
-            i = secondNumber.index();
-            result += (long) firstNumber.number() * secondNumber.number();
+            i = secondNumber.index;
+            result += (long) firstNumber.number * secondNumber.number;
         }
         System.out.println("Day 3, part 1 answer = " + result);
+    }
+
+    private static void partTwo() {
+        var line = Input.readSingleLineInput("Day03");
+        long result = 0;
+        int i = 0;
+        boolean enabled = true;
+        while (i < line.length() - 4) {
+            if (line.startsWith("don't()", i)) {
+                enabled = false;
+            }
+            if (line.startsWith("do()", i)) {
+                enabled = true;
+            }
+            if (line.charAt(i) != 'm' || line.charAt(i + 1) != 'u' || line.charAt(i + 2) != 'l' || line.charAt(i + 3) != '(') {
+                i++;
+                continue;
+            }
+            if (enabled) {
+                i = i + 4;
+                var firstNumber = checkForNumber(line, i, ',');
+                if (firstNumber.number == -1) {
+                    continue;
+                }
+                i = firstNumber.index;
+                var secondNumber = checkForNumber(line, i, ')');
+                if (secondNumber.number == -1) {
+                    continue;
+                }
+                i = secondNumber.index;
+                result += (long) firstNumber.number * secondNumber.number;
+            } else {
+                i++;
+            }
+        }
+        System.out.println("Day 3, part 2 answer = " + result);
     }
 
     private static NumberInLine checkForNumber(String line, int index, char endChar) {
@@ -56,5 +93,12 @@ public class Day03 {
 
 }
 
-record NumberInLine(int number, int index) {
+class NumberInLine {
+    int number;
+    int index;
+
+    public NumberInLine(int number, int index) {
+        this.number = number;
+        this.index = index;
+    }
 }
