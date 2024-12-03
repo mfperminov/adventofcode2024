@@ -19,6 +19,15 @@ public class Input {
         return Collections.emptyList();
     }
 
+    public static String readSingleLineInput(String name) {
+        try {
+            return Files.readString(Paths.get("src/main/resources/" + name), StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        return "";
+    }
+
     public static long[] extractLongs(String line) {
         return Arrays.stream(line.split(" "))
                 .filter(s -> !s.isBlank())
