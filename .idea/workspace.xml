@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03bf010b-c444-4bbb-b477-bb4e6a88f5cc" name="Changes" comment="exclude resources">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day07/Day07.java" afterDir="false" />
+    <list default="true" id="03bf010b-c444-4bbb-b477-bb4e6a88f5cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Day07/Day07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day07/Day07.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733583427509</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Day07 part 1">
+      <option name="closed" value="true" />
+      <created>1733585776904</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733585776904</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -266,7 +274,8 @@
     <MESSAGE value="Day3 part 1" />
     <MESSAGE value="Day3 part 2" />
     <MESSAGE value="exclude resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="exclude resources" />
+    <MESSAGE value="Day07 part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day07 part 1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -291,18 +300,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Day07/Day07.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Day07/Day07.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Day07/Day07.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="32" />
+          <line>73</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
