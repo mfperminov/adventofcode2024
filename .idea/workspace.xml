@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03bf010b-c444-4bbb-b477-bb4e6a88f5cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Day02/Day02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day02/Day02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Day02" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Day02" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Day01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Day02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Day03" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733593575974</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Day02 part 2">
+      <option name="closed" value="true" />
+      <created>1733601714902</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733601714902</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -285,7 +293,8 @@
     <MESSAGE value="exclude resources" />
     <MESSAGE value="Day07 part 1" />
     <MESSAGE value="Day07 part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day07 part 2" />
+    <MESSAGE value="Day02 part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day02 part 2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

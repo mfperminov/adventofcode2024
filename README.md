@@ -28,7 +28,8 @@ skills, explore new algorithms, and get into the holiday spirit! 🎁
 ## Project Structure
 
 - src/main/java: Contains Java source files for each day's challenge.
-- src/main/resources: Input files for each day's challenge.
+  Input files are not included
+  as [they are private](https://www.reddit.com/r/adventofcode/comments/18an94z/psa_dont_share_your_inputs_even_in_your_github/)
 
 ## License
 
