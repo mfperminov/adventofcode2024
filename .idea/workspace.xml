@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="03bf010b-c444-4bbb-b477-bb4e6a88f5cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Day07/Day07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day07/Day07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Day02/Day02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day02/Day02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Day02" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Day02" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +106,7 @@
       <recent name="Day02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Day07">
+  <component name="RunManager" selected="Application.Day02">
     <configuration name="Day01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day01.Day01" />
       <module name="adventofcode2024.main" />
@@ -265,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733585776904</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Day07 part 2">
+      <option name="closed" value="true" />
+      <created>1733593575974</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733593575974</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -275,7 +284,8 @@
     <MESSAGE value="Day3 part 2" />
     <MESSAGE value="exclude resources" />
     <MESSAGE value="Day07 part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day07 part 1" />
+    <MESSAGE value="Day07 part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day07 part 2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -300,7 +310,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Day07/Day07.java</url>
-          <line>73</line>
+          <line>70</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>

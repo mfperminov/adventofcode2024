@@ -1,5 +1,8 @@
 package Day02;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import utils.Input;
 
 import static utils.Input.readInput;
@@ -44,6 +47,26 @@ public class Day02 {
     private static void partTwo() {
         var reports = readInput("Day02");
         var safeCount = 0;
+        for (String report : reports) {
+            var levels = Input.extractInts(report, " ");
+            var checkSafe = checkSafe(levels);
+            if (checkSafe != 0) {
+                safeCount += checkSafe;
+                continue;
+            }
+            var list = Arrays.stream(levels).boxed().toList();
+            var initSize = list.size();
+            for (int i = 0; i < initSize; i++) {
+                var withIRemoved = new ArrayList<Integer>(list);
+                withIRemoved.remove(i);
+                var safeWithRemoved = checkSafe(withIRemoved.stream().mapToInt(Integer::intValue).toArray());
+                if (safeWithRemoved != 0) {
+                    safeCount += safeWithRemoved;
+                    break;
+                }
+            }
+        }
+        System.out.println("Day 2, part 1 answer = " + safeCount);
     }
 
 }
