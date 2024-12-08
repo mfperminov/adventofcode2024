@@ -5,6 +5,7 @@ import utils.Input;
 public class Day04 {
     public static void main(String[] args) {
         partOne();
+        partTwo();
     }
 
     private static void partOne() {
@@ -93,5 +94,36 @@ public class Day04 {
         } else {
             return 0L;
         }
+    }
+
+    private static void partTwo() {
+        char[][] input = Input.readInputToCharArr("Day04");
+        long result = 0;
+        boolean masFoundRight = false;
+        boolean masFoundLeft = false;
+        for (int i = 0; i < input.length; i++) {
+            for (int j = 0; j < input[i].length; j++) {
+                masFoundRight = false;
+                masFoundLeft = false;
+                if (input[i][j] == 'A') {
+                    masFoundRight = checkRightForMAS(input, i, j);
+                    masFoundLeft = checkLeftForMAS(input, i, j);
+                    if (masFoundRight && masFoundLeft) {
+                        result++;
+                    }
+                }
+            }
+        }
+        System.out.println("Day 04 part 2 answer = " + result);
+    }
+
+    private static boolean checkRightForMAS(char[][] input, int i, int j) {
+        return (exist(input, i - 1, j + 1, 'M') && exist(input, i + 1, j - 1, 'S')
+                || exist(input, i - 1, j + 1, 'S') && exist(input, i + 1, j - 1, 'M'));
+    }
+
+    private static boolean checkLeftForMAS(char[][] input, int i, int j) {
+        return (exist(input, i - 1, j - 1, 'M') && exist(input, i + 1, j + 1, 'S')
+                || exist(input, i - 1, j - 1, 'S') && exist(input, i + 1, j + 1, 'M'));
     }
 }
