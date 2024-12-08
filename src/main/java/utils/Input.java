@@ -19,6 +19,18 @@ public class Input {
         return Collections.emptyList();
     }
 
+    public static char[][] readInputToCharArr(String name) {
+        try {
+            var lines = Files.readAllLines(Paths.get("src/main/resources/" + name), StandardCharsets.UTF_8);
+            return lines.stream()
+                    .map(String::toCharArray)
+                    .toArray(char[][]::new);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        return new char[0][0];
+    }
+
     public static String readSingleLineInput(String name) {
         try {
             return Files.readString(Paths.get("src/main/resources/" + name), StandardCharsets.UTF_8);
